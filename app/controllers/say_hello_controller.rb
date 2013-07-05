@@ -1,7 +1,7 @@
 class SayHelloController < ApplicationController
   
   def say_hello_to
-    @name = params[:name]
+    @name = params[:name] + "!"
     render :say_hello
   end
   

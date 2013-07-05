@@ -5,6 +5,8 @@ Testapp::Application.routes.draw do
   
   match "/sayhello/to/:name" => "say_hello#say_hello_to"
 
+  match "/sayhello/to/:a/:b" => "add_number#adding"
+
   # STEP 1: tell your application which url should go to which
   # peice of code (config/routes.rb)
 

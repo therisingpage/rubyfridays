@@ -1,18 +1,20 @@
+<!--  No equal sign. whatever inside will be evaluated-->
 <h2><% "this will not be shown on the page" %></h2>
+<!--  == sign shall pipe stuff out -->
 <h2><%= "this however, will be" %></h2>
 
 <!-- i can create variables, and not show them -->
 <h2><% a = Time.now%></h2>
 <!-- and i can manipulate then, and only show the result when I choose to ...  -->
 <h2><% a = a + 10.days %></h2>
-<h2><%= a%></h2>
+<h2>Say hello to the future<%= a%></h2>
 
 
 <!-- i can even choose what to show based on the input! -->
 
 <h2>
 	Hello <%= @name %>.
-	<% if @name == "akash" %>
+	<% if @name == "akash!" %>
 	you wonderful, amazing person
 	<% end %>
 </h2>

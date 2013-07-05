@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
 	def index
-		@message = "this is a message I wrote in the controller"
+		@message = "Here is the message"
 	end
 
 	def sayhello
